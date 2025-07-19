@@ -1,7 +1,6 @@
-/* Import base styles and variables from index.css */
-@import url('index.css');
 
-/* Projects Specific Styles */
+@import url('/assets/css/style.css');
+
 .projects-header {
     text-align: center;
     padding: 3rem 0 2rem;
@@ -24,7 +23,6 @@
     margin: 0 auto;
 }
 
-/* Filter Section */
 .filter-section {
     padding: 2rem 0;
     background: var(--background-color);
@@ -62,7 +60,6 @@
     color: var(--text-secondary);
 }
 
-/* Filter Buttons */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -99,7 +96,6 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Projects Grid */
 .projects-grid {
     padding: 3rem 0;
     display: grid;
@@ -152,7 +148,6 @@
     margin-bottom: 1rem;
 }
 
-/* Project Tags */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +164,6 @@
     font-weight: 500;
 }
 
-/* Project Links */
 .project-links {
     display: flex;
     gap: 1rem;
@@ -212,13 +206,11 @@
     transform: translateY(-2px);
 }
 
-/* CSS-only Search and Filter Implementation */
 /* Hide projects that don't match search - using :not(:focus) on search input to show all when not searching */
 .search-input:placeholder-shown:not(:focus) ~ .projects-grid .project-card {
     display: block;
 }
 
-/* Show projects based on filter selection */
 #filter-all:checked ~ * .project-card {
     display: block;
 }
@@ -247,7 +239,6 @@
     display: block;
 }
 
-/* Responsive Design for Projects */
 @media (max-width: 768px) {
     .projects-header h1 {
         font-size: 2.5rem;
@@ -295,7 +286,6 @@
     }
 }
 
-/* Animation for project cards when they appear/disappear */
 .project-card {
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -311,7 +301,6 @@
     }
 }
 
-/* Loading state for better UX */
 .projects-grid:empty::after {
     content: "No projects found matching your criteria.";
     display: block;
