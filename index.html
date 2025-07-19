@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD-Finals</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- DARK MODE TOGGLE -->
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+    
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>JD</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+            </ul>
+            <label for="dark-mode-toggle" class="theme-toggle">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </label>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENTT -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <!-- Using a placeholder div since we can't generate actual images -->
+                        <div class="image-placeholder">
+                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="100" fill="var(--primary-color)" opacity="0.2"/>
+                                <circle cx="100" cy="75" r="25" fill="var(--primary-color)"/>
+                                <path d="M60 140 Q100 120 140 140 L140 160 Q100 140 60 160 Z" fill="var(--primary-color)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Miguel Pardo</h1>
+                    <p class="hero-subtitle">Cybersecurity Student</p>
+                    <p class="hero-description">
+                        Welcome to my digital portfolio! I'm a passionate developer with expertise in 
+                        modern web technologies. I create innovative solutions that bridge the gap 
+                        between design and functionality, delivering exceptional user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS PREVIEW -->
+        <section class="skills-preview">
+            <div class="container">
+                <h2>Core Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">💻</div>
+                        <h3>Frontend Development</h3>
+                        <p>React, Vue.js, HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Python, PHP, Database Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Figma, Adobe XD, Responsive Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">☁️</div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>AWS, Docker, CI/CD, Git</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Miguel Pardo. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">🔗</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
