@@ -1,6 +1,5 @@
-/* CSS Variables for Theme Management */
 :root {
-    /* Light Theme Colors */
+    /* LIGHT THEME */
     --primary-color: #2563eb;
     --primary-dark: #1d4ed8;
     --secondary-color: #64748b;
@@ -14,7 +13,7 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Dark Theme Colors */
+/* DARK THEME */
 .dark-mode-toggle:checked ~ * {
     --primary-color: #3b82f6;
     --primary-dark: #2563eb;
@@ -29,7 +28,6 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +48,7 @@ body {
     padding: 0 1rem;
 }
 
-/* Dark Mode Toggle */
+/* DARK MODE */
 .dark-mode-toggle {
     display: none;
 }
@@ -147,7 +145,7 @@ body {
     background: var(--primary-color);
 }
 
-/* Main Content */
+/* MAIN CONTENT */
 .main {
     min-height: calc(100vh - 80px);
 }
@@ -222,7 +220,7 @@ body {
     gap: 1rem;
 }
 
-/* Button Styles */
+/* BUTTON STYLES */
 .btn {
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
