@@ -1,0 +1,323 @@
+/* Import base styles and variables from index.css */
+@import url('index.css');
+
+/* Projects Specific Styles */
+.projects-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    background: linear-gradient(135deg, var(--surface-color) 0%, var(--background-color) 100%);
+}
+
+.projects-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.projects-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Section */
+.filter-section {
+    padding: 2rem 0;
+    background: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    background: var(--surface-color);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons input[type="radio"] {
+    display: none;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 2rem;
+    background: var(--surface-color);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-buttons input[type="radio"]:checked + .filter-btn {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: var(--shadow-lg);
+}
+
+/* Projects Grid */
+.projects-grid {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--surface-color);
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.project-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Project Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.code-link {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.code-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.demo-link {
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.demo-link:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* CSS-only Search and Filter Implementation */
+/* Hide projects that don't match search - using :not(:focus) on search input to show all when not searching */
+.search-input:placeholder-shown:not(:focus) ~ .projects-grid .project-card {
+    display: block;
+}
+
+/* Show projects based on filter selection */
+#filter-all:checked ~ * .project-card {
+    display: block;
+}
+
+#filter-school:checked ~ * .project-card {
+    display: none;
+}
+
+#filter-school:checked ~ * .project-card[data-category="school"] {
+    display: block;
+}
+
+#filter-personal:checked ~ * .project-card {
+    display: none;
+}
+
+#filter-personal:checked ~ * .project-card[data-category="personal"] {
+    display: block;
+}
+
+#filter-freelance:checked ~ * .project-card {
+    display: none;
+}
+
+#filter-freelance:checked ~ * .project-card[data-category="freelance"] {
+    display: block;
+}
+
+/* Responsive Design for Projects */
+@media (max-width: 768px) {
+    .projects-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+        text-align: center;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-header {
+        padding: 2rem 0 1rem;
+    }
+    
+    .projects-header h1 {
+        font-size: 2rem;
+    }
+    
+    .search-container {
+        margin: 0 auto 1.5rem;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Animation for project cards when they appear/disappear */
+.project-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading state for better UX */
+.projects-grid:empty::after {
+    content: "No projects found matching your criteria.";
+    display: block;
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 3rem;
+    grid-column: 1 / -1;
+}
