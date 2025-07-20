@@ -711,3 +711,10 @@ body,
   background-color: var(--background-color);
   color: var(--text-primary);
 }
+
+.profile-image-resume img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
