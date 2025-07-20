@@ -233,7 +233,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Miguel Pardo. All rights reserved.</p>
@@ -244,5 +243,25 @@
             </div>
         </div>
     </footer>
+    <script>
+  const toggle = document.getElementById("dark-mode-toggle");
+
+  // Apply stored dark mode state on load
+  if (localStorage.getItem("darkMode") === "enabled") {
+    toggle.checked = true;
+    document.documentElement.classList.add("dark-mode");
+  }
+
+  toggle.addEventListener("change", function () {
+    if (toggle.checked) {
+      localStorage.setItem("darkMode", "enabled");
+      document.documentElement.classList.add("dark-mode");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+      document.documentElement.classList.remove("dark-mode");
+    }
+  });
+</script>
+
 </body>
 </html>
