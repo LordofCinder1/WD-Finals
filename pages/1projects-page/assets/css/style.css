@@ -114,7 +114,7 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Projects Grid */
+/* PROJECTS GRID */
 .projects-grid {
     padding: 3rem 0;
     display: grid;
@@ -162,12 +162,12 @@
     margin-bottom: 1rem;
 }
 
-/* Project Tags */
+/* TAGS */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
