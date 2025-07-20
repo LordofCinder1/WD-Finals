@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="stylesheet" href="../resume-page/assets/css/style.css">
+</head>
+<body>
+
+  <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand"><h2>MP</h2></div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+      </ul>
+      <label for="dark-mode-toggle" class="theme-toggle">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </label>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      
+      <!-- Resume Header -->
+      <section class="resume-header">
+        <div class="resume-actions">
+          <button class="download-btn" onclick="window.print()">Download PDF</button>
+          <button class="print-btn" onclick="window.print()">Print Resume</button>
+        </div>
+        <h1>Student Resume</h1>
+        <p>Cybersecurity-focused IT student with interests in frontend development and systems security</p>
+      </section>
+
+      <!-- Resume Content -->
+      <div class="resume-container">
+
+        <!-- Personal Info -->
+        <section class="personal-info">
+          <div class="personal-header">
+            <div class="profile-section">
+              <div class="profile-image-resume">
+                <div style="width:120px;height:120px;background:var(--primary-color);border-radius:50%;"></div>
+              </div>
+              <div class="personal-details">
+                <h1>Miguel Pardo</h1>
+                <h2>Cybersecurity & Web Development Student</h2>
+                <div class="contact-info">
+                  <div class="contact-item">📧 mjmpardo17@gmail.com</div>
+                  <div class="contact-item">📱 +63 9394996505</div>
+                  <div class="contact-item">📍 Makati, Philippines</div>
+                  <div class="contact-item">🔗 <a href="https://linkedin.com/in/miguel-pardo-9705b4263" target="_blank">linkedin.com/in/miguel‑pardo</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="resume-section">
+          <h2>Summary</h2>
+          <p>
+            Motivated IT student specializing in cybersecurity with a growing passion for frontend web development. Skilled in HTML, CSS, and JavaScript, with experience in C++ and basic hardware concepts. Learns effectively through trial and error and enjoys building practical applications through hands-on experience.
+          </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="resume-section">
+          <h2>Technical Skills</h2>
+          <div class="skills-resume">
+            <div class="skill-category-resume">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Canva (UI design & assets)</li>
+              </ul>
+            </div>
+            <div class="skill-category-resume">
+              <h3>Programming</h3>
+              <ul>
+                <li>C++</li>
+                <li>Basic JavaScript DOM Manipulation</li>
+              </ul>
+            </div>
+            <div class="skill-category-resume">
+              <h3>Tools & Databases</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Excel / Google Sheets</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-section">
+          <h2>Education</h2>
+          <div class="education-list">
+            <div class="education-item">
+              <div class="education-header">
+                <h3>BS in Information Technology – Cybersecurity</h3>
+                <span class="education-date">2024 – 2028</span>
+              </div>
+              <p class="education-school">Sampaloc, Manila</p>
+              <ul class="education-details">
+                <li>Focused on C++, computer hardware, and frontend development</li>
+                <li>Actively learning through project-based coursework</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="resume-section">
+          <h2>Certifications</h2>
+          <div class="certifications-list">
+            <div class="certification-item">
+              <h3>IT Specialist – HTML & CSS</h3>
+              <span class="cert-date">Issued: July 2025</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="resume-section">
+          <h2>Languages</h2>
+          <div class="languages-list">
+            <div class="language-item">
+              <span class="language-name">English</span>
+              <span class="language-level">Fluent</span>
+            </div>
+            <div class="language-item">
+              <span class="language-name">German</span>
+              <span class="language-level">Basic</span>
+            </div>
+            <div class="language-item">
+              <span class="language-name">Polish</span>
+              <span class="language-level">Basic</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Miguel. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/LordofCinder1" target="_blank" aria-label="GitHub">🐱</a>
+        <a href="https://linkedin.com/in/miguel-pardo-9705b4263" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="#" target="_blank" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
