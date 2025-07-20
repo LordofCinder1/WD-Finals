@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - John Doe</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="../1projects-page/assets/css/style.css">
 
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
+    <!-- DARK MODE TOGGLE -->
     <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
     
-    <!-- Header Navigation -->
+    <!-- HEADER -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <h2>JD</h2>
+                <h2>MP</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="../../index.html" class="nav-link">Home</a></li>
@@ -31,7 +31,6 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
         <div class="container">
             <section class="projects-header">
@@ -39,7 +38,7 @@
                 <p>Explore my portfolio of creative and technical projects across different categories.</p>
             </section>
 
-            <!-- Search and Filter Section -->
+            <!-- SEARCH AND FILTER -->
             <section class="filter-section">
                 <!-- Search Input -->
                 <div class="search-container">
@@ -47,7 +46,7 @@
                     <span class="search-icon">🔍</span>
                 </div>
 
-                <!-- Filter Buttons -->
+                <!-- FILTER BUTTONS -->
                 <div class="filter-buttons">
                     <input type="radio" id="filter-all" name="filter" checked>
                     <label for="filter-all" class="filter-btn">All</label>
@@ -63,32 +62,29 @@
                 </div>
             </section>
 
-            <!-- Projects Grid -->
+            <!-- PROJECTS GRID -->
             <section class="projects-grid">
                 <!-- School Projects -->
                 <div class="project-card" data-category="school" data-search="student management system database java">
                     <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <rect x="50" y="50" width="300" height="100" rx="10" fill="var(--primary-color)" opacity="0.3"/>
-                            <circle cx="200" cy="100" r="30" fill="var(--primary-color)"/>
-                            <text x="200" y="160" text-anchor="middle" fill="var(--text-primary)" font-size="16">Student Management</text>
-                        </svg>
+                        <div class="project-image">
+    <img src="../1projects-page/assets/img/WD-Seatwork-1.png" alt="Student Management System Preview" width="100%" height="100%">
+</div>
+
                     </div>
                     <div class="project-content">
-                        <h3>Student Management System</h3>
-                        <p>A comprehensive database management system for tracking student records, grades, and course enrollment built with Java and MySQL.</p>
+                        <h3>WD-Seatwork-1</h3>
+                        <p>A project that showcases a variety of header and footer designs using HTML and CSS.</p>
                         <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Swing</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
+                                <span>📝</span> View Code
                             </a>
                             <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
+                                <span>💻</span> Live Demo
                             </a>
                         </div>
                     </div>
@@ -96,7 +92,7 @@
 
                 <div class="project-card" data-category="school" data-search="data structures algorithms sorting searching c++">
                     <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="/">
                             <rect width="400" height="200" fill="var(--surface-color)"/>
                             <rect x="50" y="70" width="60" height="60" fill="var(--primary-color)" opacity="0.5"/>
                             <rect x="130" y="50" width="60" height="80" fill="var(--primary-color)" opacity="0.7"/>
@@ -115,218 +111,21 @@
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
+                                <span>📝</span> View Code
                             </a>
                             <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
+                                <span>💻</span> Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Personal Projects -->
-                <div class="project-card" data-category="personal" data-search="weather app react javascript api">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <circle cx="120" cy="80" r="40" fill="#FFD700"/>
-                            <path d="M200 60 Q220 40 240 60 Q260 40 280 60 Q300 80 280 100 Q240 120 200 100 Q180 80 200 60" fill="#87CEEB"/>
-                            <path d="M50 140 L100 130 L150 140 L200 135 L250 140 L300 130 L350 140" stroke="var(--primary-color)" stroke-width="3" fill="none"/>
-                            <text x="200" y="170" text-anchor="middle" fill="var(--text-primary)" font-size="16">Weather App</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Forecast App</h3>
-                        <p>Modern weather application with real-time data, 7-day forecasts, and location-based weather information using React and OpenWeather API.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">API</span>
-                            <span class="tag">CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
-                            </a>
-                            <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            </main>
 
-                <div class="project-card" data-category="personal" data-search="task manager productivity vue.js local storage">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <rect x="80" y="40" width="240" height="120" rx="10" fill="var(--background-color)" stroke="var(--border-color)" stroke-width="2"/>
-                            <rect x="100" y="60" width="15" height="15" fill="var(--primary-color)"/>
-                            <rect x="125" y="62" width="100" height="3" fill="var(--text-secondary)"/>
-                            <rect x="100" y="85" width="15" height="15" fill="var(--primary-color)"/>
-                            <rect x="125" y="87" width="80" height="3" fill="var(--text-secondary)"/>
-                            <rect x="100" y="110" width="15" height="15" fill="var(--border-color)"/>
-                            <rect x="125" y="112" width="120" height="3" fill="var(--text-secondary)"/>
-                            <text x="200" y="180" text-anchor="middle" fill="var(--text-primary)" font-size="16">Task Manager</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3>Personal Task Manager</h3>
-                        <p>Productivity application with task creation, priority management, deadlines, and progress tracking. Features local storage and export functionality.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">LocalStorage</span>
-                            <span class="tag">PWA</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
-                            </a>
-                            <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Freelance Projects -->
-                <div class="project-card" data-category="freelance" data-search="ecommerce website php mysql online store">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <rect x="60" y="30" width="280" height="140" rx="10" fill="var(--background-color)" stroke="var(--border-color)" stroke-width="2"/>
-                            <rect x="80" y="50" width="60" height="60" fill="var(--primary-color)" opacity="0.3"/>
-                            <rect x="160" y="50" width="60" height="60" fill="var(--primary-color)" opacity="0.3"/>
-                            <rect x="240" y="50" width="60" height="60" fill="var(--primary-color)" opacity="0.3"/>
-                            <rect x="80" y="120" width="220" height="8" fill="var(--primary-color)"/>
-                            <circle cx="320" cy="60" r="15" fill="#FF6B6B"/>
-                            <text x="325" y="65" text-anchor="middle" fill="white" font-size="12" font-weight="bold">3</text>
-                            <text x="200" y="185" text-anchor="middle" fill="var(--text-primary)" font-size="16">E-commerce Store</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Platform</h3>
-                        <p>Full-featured online store with product catalog, shopping cart, payment integration, and admin dashboard for a local retailer.</p>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Bootstrap</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
-                            </a>
-                            <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="freelance" data-search="restaurant website booking system node.js mongodb">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <rect x="50" y="40" width="300" height="120" rx="15" fill="var(--background-color)" stroke="var(--border-color)" stroke-width="2"/>
-                            <circle cx="150" cy="90" r="25" fill="#FFD700"/>
-                            <rect x="120" y="115" width="60" height="8" fill="var(--primary-color)"/>
-                            <rect x="200" y="70" width="120" height="6" fill="var(--text-secondary)"/>
-                            <rect x="200" y="85" width="100" height="6" fill="var(--text-secondary)"/>
-                            <rect x="200" y="100" width="80" height="6" fill="var(--text-secondary)"/>
-                            <rect x="250" y="115" width="50" height="15" fill="var(--primary-color)" rx="3"/>
-                            <text x="200" y="180" text-anchor="middle" fill="var(--text-primary)" font-size="16">Restaurant Website</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3>Restaurant Booking System</h3>
-                        <p>Modern restaurant website with online reservation system, menu display, and customer management built for a fine dining establishment.</p>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
-                            </a>
-                            <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="personal" data-search="portfolio website responsive design html css">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <rect x="50" y="30" width="300" height="140" rx="10" fill="var(--background-color)" stroke="var(--border-color)" stroke-width="2"/>
-                            <rect x="70" y="50" width="80" height="40" fill="var(--primary-color)" opacity="0.3"/>
-                            <rect x="70" y="100" width="120" height="8" fill="var(--text-secondary)"/>
-                            <rect x="70" y="115" width="100" height="8" fill="var(--text-secondary)"/>
-                            <rect x="70" y="130" width="80" height="8" fill="var(--text-secondary)"/>
-                            <circle cx="280" cy="70" r="30" fill="var(--primary-color)" opacity="0.5"/>
-                            <rect x="200" y="100" width="120" height="50" fill="var(--primary-color)" opacity="0.2"/>
-                            <text x="200" y="185" text-anchor="middle" fill="var(--text-primary)" font-size="16">Portfolio Website</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>Responsive portfolio website showcasing projects and skills with dark mode, smooth animations, and modern design principles.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
-                            </a>
-                            <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="school" data-search="mobile app android kotlin university final project">
-                    <div class="project-image">
-                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="var(--surface-color)"/>
-                            <rect x="160" y="20" width="80" height="160" rx="15" fill="var(--background-color)" stroke="var(--border-color)" stroke-width="2"/>
-                            <rect x="170" y="40" width="60" height="40" fill="var(--primary-color)" opacity="0.3"/>
-                            <rect x="175" y="90" width="50" height="4" fill="var(--text-secondary)"/>
-                            <rect x="175" y="100" width="40" height="4" fill="var(--text-secondary)"/>
-                            <rect x="175" y="110" width="45" height="4" fill="var(--text-secondary)"/>
-                            <rect x="175" y="130" width="50" height="20" fill="var(--primary-color)" rx="3"/>
-                            <circle cx="200" cy="165" r="8" fill="var(--border-color)"/>
-                            <text x="200" y="195" text-anchor="middle" fill="var(--text-primary)" font-size="16">Mobile App</text>
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3>Campus Navigation App</h3>
-                        <p>Android application for university campus navigation with real-time directions, building information, and event notifications.</p>
-                        <div class="project-tags">
-                            <span class="tag">Kotlin</span>
-                            <span class="tag">Android</span>
-                            <span class="tag">Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link code-link">
-                                <span>👨‍💻</span> View Code
-                            </a>
-                            <a href="#" class="project-link demo-link">
-                                <span>🚀</span> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 John Doe. All rights reserved.</p>
+            <p>&copy; 2025 Miguel Pardo. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" aria-label="GitHub">🔗</a>
                 <a href="#" aria-label="LinkedIn">💼</a>
